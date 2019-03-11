@@ -90,10 +90,6 @@ export default {
     },
     setError: function(e) {
       this.error = this.$Amplify.I18n.get(e.message || e);
-      console.log('★★★')
-      console.log(e.message)
-      console.log(e)
-      console.log('★★★')
       this.logger.error(this.error)
     }
   }
